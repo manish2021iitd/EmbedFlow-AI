@@ -7,7 +7,8 @@ A production-grade **Retrieval-Augmented Generation (RAG)** chatbot with a modul
 ## Architecture
 
 ```
-![Uploading EmbedFlow Architecture.png…]()
+<img width="1536" height="1024" alt="EmbedFlow Architecture" src="https://github.com/user-attachments/assets/b62281bb-1c91-4b2f-bd4c-a50875a6b3aa" />
+
 
 ```
 
