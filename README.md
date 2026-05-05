@@ -1,4 +1,4 @@
-# 🔮 RAG Chatbot — AI Knowledge Assistant
+# 🔮 EmbedFlow-AI — AI Knowledge Assistant
 
 A production-grade **Retrieval-Augmented Generation (RAG)** chatbot with a modular architecture. Ask questions about your private documents and get accurate, cited answers powered by Claude, OpenAI, or Gemini.
 
@@ -7,31 +7,8 @@ A production-grade **Retrieval-Augmented Generation (RAG)** chatbot with a modul
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                        RAG Pipeline                             │
-│                                                                 │
-│  Documents (.md/.txt)                                           │
-│       │                                                         │
-│       ▼                                                         │
-│  TextSplitter (512 tok, 64 overlap)                             │
-│       │                                                         │
-│       ▼                                                         │
-│  SentenceTransformer (all-MiniLM-L6-v2 → 384-dim vectors)      │
-│       │                                                         │
-│       ▼                                                         │
-│  FAISS IndexFlatIP ──── (persisted to disk)                     │
-│       │                                                         │
-│  Query Embedding ──────► Cosine Search (top-k)                  │
-│                                  │                              │
-│                                  ▼                              │
-│                       Context Assembly                           │
-│                                  │                              │
-│                                  ▼                              │
-│                     LLM (Claude / GPT-4o / Gemini)              │
-│                                  │                              │
-│                                  ▼                              │
-│                     Answer + Source Citations                    │
-└─────────────────────────────────────────────────────────────────┘
+![Uploading EmbedFlow Architecture.png…]()
+
 ```
 
 ## Project Structure
